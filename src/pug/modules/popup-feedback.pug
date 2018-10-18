@@ -1,0 +1,18 @@
+.popup-feedback#popupFeedback
+    .popup-feedback__content
+        .popup-feedback-close
+            span.popup-feedback-close__line
+            span.popup-feedback-close__line
+        .popup-feedback__title 
+            span.popup-feedback__title--bold Задать вопрос
+            span или узнать цену
+        form
+            input(type="text" id="popupFeedbackName" placeholder="Введите Ваше Имя").popup-feedback__input
+            input(type="text" id="popupFeedbackEmail" placeholder="Введите Ваш E-mail").popup-feedback__input
+            input(type="text" id="popupFeedbackPhone" placeholder="Введите Ваш телефон").popup-feedback__input
+            input(type="text" id="popupFeedbackQuestion" placeholder="Напишите Ваш вопрос").popup-feedback__input.popup-feedback__input--question
+            button(id="feedbackBtn").popup-feedback__button Отправить
+        .popup-feedback__desr
+            span *Нажимая на кнопку “Отправить” Вы соглашаетесь с политикой 
+                | обработки персональных данных
+    

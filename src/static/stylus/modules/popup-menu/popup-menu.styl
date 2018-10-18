@@ -1,0 +1,107 @@
+.popup-menu
+    z-index 50
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: rgba(0,0,0,0.6)
+    display none
+    justify-content center
+    align-items center
+    animation fadeIn .5s
+
+    &__content
+        position relative
+        padding 20px
+        max-width 290px
+        width 100%
+        background-color white
+        box-shadow 0 0 9px 1px rgba(0, 0, 0, 0.3)
+        display flex
+        flex-direction column
+        justify-content flex-start
+        align-items center
+
+
+    &-close
+        position absolute
+        top 15px
+        right 15px
+        width 20px
+        height 20px
+        cursor pointer
+
+        &:hover
+            .popup-menu-close__line
+                background-color black
+
+        &__line
+            position absolute
+            top 7.5px
+            right 0px
+            display block
+            width 20px
+            height 4px
+            background-color cheryBlue
+            border-radius 2px
+            transition all linear .5s
+
+            &:first-child
+                transform rotate(45deg)
+            
+            &:last-child
+                transform rotate(-45deg)
+
+    &__title
+        color #404040
+        font-family lightFont
+        font-size 14px
+        margin-bottom 40px
+        display flex
+        flex-direction column
+        justify-content flex-start
+        align-items center
+
+        &--bold
+            color black
+            font-family semiBoldFont
+            font-size 18px
+            text-transform uppercase
+
+    &__list
+        display flex
+        flex-direction column
+        justify-content flex-start
+        align-items center
+
+    &__link
+        color cheryBlue
+        font-family mediumFont
+        font-size 16px
+        text-transform uppercase
+        margin-bottom 5px
+        transition all linear .5s
+        cursor pointer
+
+        &:hover
+            border-bottom 1px solid cheryBlue
+
+
+
+@keyframes fadeIn
+    from {
+        opacity 0
+    }
+    to {
+        opacity 1
+    }
+
+@keyframes fadeOut
+    from {
+        opacity 1
+    }
+    to {
+        opacity 0
+    }

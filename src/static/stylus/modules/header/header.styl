@@ -1,0 +1,113 @@
+.header
+    height 150px
+    background-color mandarinBlack
+    margin-bottom 8px
+
+    .container
+        height 100%
+        display flex
+        flex-direction column
+        justify-content center
+        align-items flex-start
+
+    &__link
+        color white
+        font-family SSProLightFont
+        font-size 14px
+        transition all linear .5s
+        cursor pointer
+
+        &:hover
+            color mandarinYellowLight
+
+    &-line
+        width 100%
+        display flex
+        justify-content space-between
+        align-items flex-start
+
+        &:first-child
+            margin-bottom 10px
+
+    &-logo
+        &__img
+            max-width 240px
+            height 68px
+            object-fit contain
+
+    &-phone
+        margin-top 15px
+        padding-left 35px
+        position relative
+        display flex
+        flex-direction column
+        justify-content flex-start
+        align-items flex-start
+
+        &:after
+            content ''
+            position absolute
+            top 50%
+            left 0
+            transform translateY(-50%)
+            width 20px
+            height 20px
+            background url('../img/general/phone-icon--yellow.png') center no-repeat
+            background-size contain
+
+    &-locations
+        margin-top 15px
+        padding-left 18px
+        position relative
+        
+        &:after
+            content ''
+            position absolute
+            top 50%
+            left 0
+            transform translateY(-50%)
+            width 16px
+            height 16px
+            background url('../img/general/locations-icon--yellow.png') center no-repeat
+            background-size contain
+
+    &-brands
+        margin-top 15px
+        padding-left 26px
+        position relative
+
+        &:after
+            content ''
+            position absolute
+            top 50%
+            left 0
+            transform translateY(-50%)
+            width 20px
+            height 20px
+            background url('../img/general/logo-icon--small.png') center no-repeat
+            background-size contain
+
+    &-actions
+        margin-top 15px
+        padding-left 26px
+        position relative
+
+        &:after
+            content ''
+            position absolute
+            top 50%
+            left 0
+            transform translateY(-50%)
+            width 20px
+            height 20px
+            background url('../img/general/percent-icon--yellow.png') center no-repeat
+            background-size contain
+
+    &-info
+        color white
+        font-family SSProLightFont
+        font-size 14px
+
+        &--bold
+            color mandarinYellowLight
+            font-family SSProBlackFont
