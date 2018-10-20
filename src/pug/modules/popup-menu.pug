@@ -1,16 +1,41 @@
 .popup-menu#popupMenu
-    .popup-menu__content
+    //- .popup-menu__content
+    .popup-menu-header
+        .popup-menu-language
+            a(href="#").popup-menu-language__link.active РУС
+            a(href="#").popup-menu-language__link УКР
         .popup-menu-close
             span.popup-menu-close__line
             span.popup-menu-close__line
-        .popup-menu__title 
-            span.popup-menu__title--bold Задать вопрос
-            span или узнать цену
+    .popup-menu__item
+        .popup-menu__title
+            span Личный кабинет
+        .popup-menu-log
+            a(href="#").popup-menu__link Вход
+            a(href="#").popup-menu__link Регистрация
 
-        .popup-menu__list
-            a(href="#").popup-menu__link.scroll-link Материалы
-            a(href="#").popup-menu__link.scroll-link Фотогалерея 
-            a(href="#").popup-menu__link.scroll-link О Магазине 
-            a(href="#").popup-menu__link.scroll-link Монтаж  
-            a(href="#").popup-menu__link.scroll-link Контакты
+    .popup-menu__item
+        .popup-menu__title
+            span Меню
+        ul.popup-menu__list
+            li.popup-menu__item
+                a(href="#").popup-menu__link Оплата и доставка
+            li.popup-menu__item
+                a(href="#").popup-menu__link Гарантии
+            li.popup-menu__item
+                a(href="#").popup-menu__link Шоурум
+            li.popup-menu__item
+                a(href="#").popup-menu__link Контакты
+
+    .popup-menu-footer
+        .popup-menu-actions
+            a(href="#").popup-menu__link Акции
+        .popup-menu-brands
+            a(href="#").popup-menu__link Бренды
+        .popup-menu-locations
+            a(href="#" target="_blank").popup-menu__link Киев, бульвар Дружбы народов 13
+        .popup-menu-phone
+            a(href="tel:+380676288857" target="_blank").popup-menu__link +38-067-628-88-57
+            a(href="tel:+380676288859" target="_blank").popup-menu__link +38-067-628-88-59
+        
     

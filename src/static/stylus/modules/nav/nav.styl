@@ -48,6 +48,7 @@
 			padding 0 5px
 			box-shadow 0 0 5px 1px rgba(0, 0, 0, 0.21)
 			.nav-search__input
+				padding 0 10px
 				opacity 1
 				width 100%
 
@@ -60,7 +61,7 @@
 					background url('../img/general/magnifier-icon--white.png') center no-repeat
 					background-size contain
 		&__input
-			padding 0 10px
+			padding 0
 			opacity 0
 			width 0%
 			height 36px
@@ -184,3 +185,78 @@
 				height 16px
 				background url('../img/general/basket-icon--black.png') center no-repeat
 				background-size contain
+
+	&-phone-mobile
+		position relative
+		display none
+		width 36px
+		height 36px
+		box-shadow 0 0 5px 1px rgba(0, 0, 0, 0.21)
+		border-radius 18px
+		background-color white
+
+		&:after
+			content ''
+			position absolute
+			top 50%
+			left 50%
+			transform translate(-50%, -50%)
+			width 16px
+			height 16px
+			background url('../img/general/phone-icon--yellow.png') center no-repeat
+			background-size contain
+
+	&__sandwich
+		position relative
+		display none
+		vertical-align middle
+		min-width 36px
+		width 36px
+		height 36px
+		box-shadow 0 0 5px 1px rgba(0, 0, 0, 0.21)
+		background-color white
+		border-radius 50% 
+		transition all linear .5s  
+		cursor pointer
+
+		&:hover
+			background-color mandarinYellowDark
+
+			.sandwich-line
+				background-color white
+
+		&.active
+			.sandwich-line--top
+				left 9px
+				top 16px
+				transform rotate(45deg)
+
+			.sandwich-line--middle
+				opacity 0
+
+			.sandwich-line--bottom
+				left 9px
+				top 16px
+				transform rotate(-45deg)
+
+		.sandwich-line
+			position absolute
+			left 50%
+			transform translateX(-50%)
+			display block
+			border-radius 2px
+			width 18px
+			height 4px
+			background-color mandarinYellowDark
+			transition all linear .5s
+
+		.sandwich-line--top
+			top 8px
+
+		.sandwich-line--middle
+			top 16px
+			opacity 1
+
+		.sandwich-line--bottom
+			top 24px
+
