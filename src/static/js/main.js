@@ -1,4 +1,56 @@
-// window.onload = () => {
+window.onload = () => {
+  const menuLink = document.querySelectorAll('.menu__link');
+
+  let addMouseLeave = category => {
+    category.addEventListener('mouseleave', event => {
+      category.classList.remove('active')
+    })
+  }
+
+  let nowOpenCategory = null;
+
+  menuLink.forEach(element => {
+    element.addEventListener('mouseenter', event => {
+      if (nowOpenCategory !== null) {
+        nowOpenCategory.classList.remove('active');
+      }
+      let target = event.target;
+      const category = target.parentElement.children[1];
+      category.classList.toggle('active');
+      addMouseLeave(category);
+      nowOpenCategory = category;
+      element.addEventListener('mouseleave', event => {
+        category.classList.remove('active')
+      })
+      category.addEventListener('mouseenter', event => {
+        category.classList.add('active')
+      })
+    })
+  })
+
+  const navLanguage = document.querySelector('.nav-language');
+  navLanguage.addEventListener('click', event => {
+    let target = event.target;
+
+    while (target != navLanguage) {
+      if (target.tagName == 'A') {
+        const childrenNavLanguage = Array.from(navLanguage.children);
+        childrenNavLanguage.forEach(element => {
+          element != target ? element.classList.remove('active') :
+          target.classList.add('active')
+        })
+        return;
+      }
+      target = target.parentNode;
+    }
+  })
+
+  const navSearchBtn = document.querySelector('.nav-search__btn');
+  const navSearch = document.querySelector('.nav-search');
+  navSearchBtn.addEventListener('click', event => {
+    navSearch.classList.add('active');
+  })
+
 //     const popupFeedback = document.getElementById('popupFeedback');
 //     const feedbackBtn = document.querySelectorAll('.feedback-btn');
 //     const popupFeedbackClose = document.querySelector('.popup-feedback-close');
@@ -151,4 +203,4 @@
 
 //     selectorCustom(select)
     
-// }
+}

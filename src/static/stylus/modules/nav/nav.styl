@@ -42,21 +42,40 @@
 		display flex
 		justify-content flex-start
 		align-items center
+		transition all linear 1s
 
 		&.active
+			padding 0 5px
 			box-shadow 0 0 5px 1px rgba(0, 0, 0, 0.21)
 			.nav-search__input
-				display block
+				opacity 1
+				width 100%
+
+			.nav-search__btn
+				min-width 30px
+				width 30px
+				height 30px
+				background-color mandarinYellowDark
+				&:after
+					background url('../img/general/magnifier-icon--white.png') center no-repeat
+					background-size contain
 		&__input
-			display none
-			width 100%
+			padding 0 10px
+			opacity 0
+			width 0%
 			height 36px
 			border none
 			background-color transparent
+			color mandarinBlack
+			font-family lightFont
+			font-size 14px
+			transition 1s
+
 
 		&__btn
 			padding 0
 			position relative
+			min-width 36px
 			width 36px
 			height 36px
 			box-shadow 0 0 5px 1px rgba(0, 0, 0, 0.21)
@@ -112,7 +131,7 @@
 				background-color mandarinYellowLight
 
 	&-language
-		padding 0 8px
+		padding 0 5px
 		width 68px
 		height 38px
 		box-shadow 0 0 5px 1px rgba(0, 0, 0, 0.21)
@@ -127,6 +146,18 @@
 			color black
 			font-family mediumFont
 			font-size 10px
+			transition all linear .1s
+			cursor pointer
+
+			&.active
+				width 30px
+				height 30px
+				opacity 1
+				border-radius 50%
+				background-color mandarinYellowDark
+				display flex
+				justify-content center
+				align-items center
 
 	&-basket
 		display flex

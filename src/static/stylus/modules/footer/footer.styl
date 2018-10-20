@@ -1,82 +1,88 @@
 .footer
-    padding 35px 0 40px
-    background-color cheryBlue
-    background-size cover
+    padding 45px 0
+    height 150px
+    background-color mandarinBlack
 
     .container
+        height 100%
         display flex
         justify-content space-between
         align-items flex-start
 
-    &-logo
-        img
-            max-width 170px
-            width 100%
-            height 62px
-
-    &__list
-        display flex
-        flex-direction column
-        justify-content flex-start
-        align-items flex-start
-
-    &__link
+    &__title
         color white
-        font-family thinFont
-        font-size 18px
-        text-transform uppercase
-        transition all linear .5s
-        cursor pointer
+        font-family lightFont
+        font-size 14px
+        margin-bottom 10px
 
-        &:hover
+    &-socials
+
+        &__content
+            display flex
+            justify-content space-between
+            align-items center
+
+        &__link
+            display block
+            width 30px
+            height 30px
+            &--facebook
+                background url('../img/general/facebook-icon.png') center no-repeat
+                background-size cover
+            &--insta
+                background url('../img/general/instagram-icon.png') center no-repeat
+                background-size cover
+    &-feedback
+
+        &__form
+            display flex
+            justify-content space-between
+            align-items center
+        &__input
+            padding 5px
+            width 220px
+            display block
+            border none
             border-bottom 1px solid white
-
-    &-social
-        display flex
-        flex-direction column
-        justify-content flex-start
-        align-items flex-start
-
-        &__title
+            background-color transparent
             color white
-            font-family mediumFont
-            font-size 18px
+            font-family mainFont
+            font-size 14px
+            margin-right 20px
 
-        &__link
+        &__btn
+            padding 0 5px
+            max-width 110px
+            width 100%
+            height 30px
+            border none
+            border-radius 15px
+            background-color mandarinYellowDark
             color white
-            font-family thinFont
-            font-size 18px
-            margin-bottom 5px
+            font-family mainFont
+            font-size 14px
             transition all linear .5s
             cursor pointer
 
-            &:last-child
-                margin 0
-
             &:hover
-                border-bottom 1px solid white
+                background-color mandarinYellowLight
 
-    &-phone
+    &-contacts
         display flex
         flex-direction column
         justify-content flex-start
-        align-items flex-start
-
-        &__title
-            color white
-            font-family mediumFont
-            font-size 18px
+        align-items flex-end
 
         &__link
             color white
-            font-family thinFont
-            font-size 18px
-            margin-bottom 5px
+            font-family lightFont
+            font-size 14px
             transition all linear .5s
             cursor pointer
+            margin-bottom 5px
 
             &:last-child
-                margin 0
+                margin-bottom 0
 
             &:hover
-                border-bottom 1px solid white
+                color mandarinYellowLight

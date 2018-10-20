@@ -1,27 +1,20 @@
 footer.footer
     .container
-        .footer-logo
-            img(src="./static/img/general/header-logo.png", alt="")
-        ul.footer__list
-            li.footer__item
-                a(href="#").footer__link.scroll-link Материалы
-            li.footer__item
-                a(href="#").footer__link.scroll-link Фотогалерея
-            li.footer__item
-                a(href="#").footer__link.scroll-link О Магазине
-            li.footer__item
-                a(href="#").footer__link.scroll-link Монтаж
-            li.footer__item
-                a(href="#").footer__link.scroll-link Контакты
-        .footer-social
-            .footer-social__title
-                span Социальные сети:
-            a(href="#" target="_blank").footer-social__link Instagram
-            a(href="#" target="_blank").footer-social__link Facebook
+        .footer-socials
+            .footer__title
+                span Будьте с нами:
+            .footer-socials__content
+                a(href="#" target="_blank").footer-socials__link.footer-socials__link--facebook
+                a(href="#" target="_blank").footer-socials__link.footer-socials__link--insta
+        .footer-feedback
+            .footer__title
+                span Хотите знать о новинках и акциях?
+            form.footer-feedback__form
+                input(type="text" name="footerEmail" id="footerEmail" placeholder="введите e-mail").footer-feedback__input
+                input(type="submit" id="footerFormBtn" value="Подписаться").footer-feedback__btn
 
-        .footer-phone
-            .footer-phone__title
-                span Телефоны:
-            a(href="tel:+380977195000" target="_blank").footer-phone__link + 38 (097) 719-50-00
-            a(href="tel:+380660915159" target="_blank").footer-phone__link + 38 (066) 091-51-59
-            a(href="tel:+380675754015" target="_blank").footer-phone__link + 38 (067) 575-40-15
+        .footer-contacts
+            .footer__title
+                span Киев, бульвар Дружбы народов 13
+            a(href="tel:+380676288857" target="_blank").footer-contacts__link +38-067-628-88-57
+            a(href="tel:+380676288859" target="_blank").footer-contacts__link +38-067-628-88-59
