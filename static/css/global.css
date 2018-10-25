@@ -1,0 +1,461 @@
+@font-face
+{
+    font-family: 'RobotoThin';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'RobotoLight';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'RobotoRegular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'RobotoMedium';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'RobotoBold';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'RobotoBlack';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'SourceSansProLight';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/SourceSansPro/SourceSansPro-Light.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'SourceSansProBlack';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/SourceSansPro/SourceSansPro-Black.ttf') format('truetype');
+}
+ul,
+li
+{
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+p
+{
+    margin: 0;
+}
+a
+{
+    text-decoration: none;
+
+    color: #000;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+{
+    vertical-align: middle;
+}
+textarea
+{
+    resize: none;
+}
+section
+{
+    position: relative;
+}
+input,
+select,
+button
+{
+    outline: none;
+}
+*,
+*:before,
+*:after
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.mandarin-dor.home-product-slider__item
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    margin-bottom: 40px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.mandarin-dor.home-product-slider__item__title
+{
+    font-family: 'RobotoRegular', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    color: #231f20;
+}
+.mandarin-dor.home-product-slider__item__prev
+{
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 0;
+
+    display: block;
+
+    width: 72px;
+    height: 100%;
+
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(255,255,255,0)), color-stop(77%, #fff), to(#fff));
+    background-image: -webkit-linear-gradient(right, rgba(255,255,255,0) 0%, #fff 77%, #fff 100%);
+    background-image:      -o-linear-gradient(right, rgba(255,255,255,0) 0%, #fff 77%, #fff 100%);
+    background-image:         linear-gradient(to left, rgba(255,255,255,0) 0%, #fff 77%, #fff 100%);
+}
+.mandarin-dor.home-product-slider__item__prev-arrow
+{
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 0;
+
+    width: 15px;
+    height: 25px;
+
+    cursor: pointer;
+    -webkit-transition: all linear .5s;
+         -o-transition: all linear .5s;
+            transition: all linear .5s;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+    background: url('../img/general/arrow-left-icon.png') center no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+}
+.mandarin-dor.home-product-slider__item__prev.slick-disabled
+{
+    display: none !important;
+}
+.mandarin-dor.home-product-slider__item__next
+{
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    right: 0;
+
+    display: block;
+
+    width: 72px;
+    height: 100%;
+
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)), color-stop(77%, #fff), to(#fff));
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 77%, #fff 100%);
+    background-image:      -o-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 77%, #fff 100%);
+    background-image:         linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 77%, #fff 100%);
+}
+.mandarin-dor.home-product-slider__item-arrow
+{
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    right: 0;
+
+    width: 15px;
+    height: 25px;
+
+    cursor: pointer;
+    -webkit-transition: all linear .5s;
+         -o-transition: all linear .5s;
+            transition: all linear .5s;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+    background: url('../img/general/arrow-right-icon.png') center no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+}
+.mandarin-dor.home-product-slider__item.slick-disabled
+{
+    display: none !important;
+}
+.mandarin-dor.home-product-slider__item__item
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    width: 210px;
+    height: 375px;
+    margin: 5px 15px;
+
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    outline: none;
+    -webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,.18);
+            box-shadow: 0 0 4px 1px rgba(0,0,0,.18);
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.mandarin-dor.home-product-slider__item__img
+{
+    display: block;
+
+    width: 140px;
+    height: 140px;
+    margin: 30px auto;
+    margin-bottom: 75px;
+
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+.mandarin-dor.home-product-slider__item__info
+{
+    position: relative;
+    z-index: 10;
+
+    width: 100%;
+    padding-bottom: 10px;
+
+    background-color: #fff;
+}
+.mandarin-dor.home-product-slider__item__info:after
+{
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+
+    display: block;
+
+    width: 100%;
+    height: 40px;
+
+    content: '';
+    -webkit-transform: skewY(10deg);
+        -ms-transform: skewY(10deg);
+            transform: skewY(10deg);
+
+    background-color: #fff;
+    -webkit-box-shadow: 0 -1px 2px 0 rgba(0,0,0,.18);
+            box-shadow: 0 -1px 2px 0 rgba(0,0,0,.18);
+}
+.mandarin-dor.home-product-slider__item__label
+{
+    font-family: 'RobotoBlack', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    right: 6px;
+
+    width: 75px;
+    height: 68px;
+    padding-top: 15px;
+
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+.mandarin-dor.home-product-slider__item__label--top
+{
+    background-color: #519205;
+}
+.mandarin-dor.home-product-slider__item__label--new
+{
+    background-color: #2705f5;
+}
+.mandarin-dor.home-product-slider__item__label--sale
+{
+    background-color: #f50549;
+}
+.mandarin-dor.home-product-slider__item__name
+{
+    font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    margin-bottom: 2px;
+    padding-left: 20px;
+
+    text-transform: uppercase;
+
+    color: #000;
+}
+.mandarin-dor.home-product-slider__item__leavel
+{
+    font-family: 'RobotoLight', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    margin-bottom: 2px;
+    padding-left: 20px;
+
+    color: #000;
+}
+.mandarin-dor.home-product-slider__item__model
+{
+    font-family: 'RobotoLight', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    margin-bottom: 2px;
+    padding-left: 20px;
+
+    color: #000;
+}
+.mandarin-dor.home-product-slider__item__price
+{
+    font-family: 'RobotoLight', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    margin-bottom: 15px;
+    padding-left: 20px;
+
+    color: #000;
+}
+.mandarin-dor.home-product-slider__item--bold
+{
+    font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
+}
+.mandarin-dor.home-product-slider__item--red
+{
+    font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
+
+    color: #d82323;
+}
+.mandarin-dor.home-product-slider__item__btn
+{
+    font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    display: block;
+
+    width: 100%;
+    max-width: 175px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    cursor: pointer;
+    -webkit-transition: all linear .5s;
+         -o-transition: all linear .5s;
+            transition: all linear .5s;
+
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    background-color: #f5cf05;
+}
+.mandarin-dor.home-product-slider__item__btn:hover
+{
+    -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,.21);
+            box-shadow: 0 0 5px 1px rgba(0,0,0,.21);
+}
+.mandarin-dor.home-product-slider__btn
+{
+    font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    display: block;
+
+    width: 100%;
+    max-width: 175px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    cursor: pointer;
+    -webkit-transition: all linear .5s;
+         -o-transition: all linear .5s;
+            transition: all linear .5s;
+
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    background-color: #f5cf05;
+}
+.mandarin-dor.home-product-slider__btn:hover
+{
+    -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,.21);
+            box-shadow: 0 0 5px 1px rgba(0,0,0,.21);
+}
